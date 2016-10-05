@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Web Audio Player Demo</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<div id="widget-wrapper">
+			<section class="widget player-widget">
+				<h2 class="player-widget-duration-info">Duration:
+					<span id="duration"></span>
+				</h2>
+				<div class="container controls-container">
+					<div class="background" id="play">
+						<div class="play"></div>
+					</div>
+					<div class="background" id="pause">
+						<div class="pause"></div>
+					</div>
+					<div class="background" id="stop">
+						<div class="stop"></div>
+					</div>
+					<div class="rangebar-wrapper">
+						<input type="range" min="0" max="100" id="player-volume" value="30"/>
+					</div>
+				</div>
+			</section>
+		</div>
+	<script type="text/javascript" src="player.js"></script>
+	</body>
+</html>
